@@ -1,0 +1,91 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DabbaWala</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/signin.css" rel="stylesheet" type="text/css">
+    <link href="css/sticky-footer.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+function validate()\n"; 
+{ 
+  if( document.myForm.area.value == \ ) 
+  {
+  alert( "Please provide Area!" );
+     document.myForm.area.focus();
+  return false; 
+  } 
+     if( document.myForm.pincode.value == \ || 
+                isNaN( document.myForm.pincode.value ) || 
+           document.myForm.pincode.value.length != 6 || document.myForm.pincode.value < 100000 ) 
+      { 
+     alert( "Please provide a zip in 6 digit Integer format." ); 
+     document.myForm.pincode.focus(); 
+     return false;
+     }
+
+ confirm("Are you sure you want to submit"); 
+   document.myForm.submit.onsubmit(); 
+} 
+</script> 
+
+    </head>
+
+<body background-image:url("background1.jpg")>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" role="navigation">
+<a class="navbar-brand" href="#">
+        <img alt="Brand" src="dabbawala.png"></a>
+        </div>
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.php">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+<ul class="nav nav-pills pull-right">
+  <li role="presentation">
+  <form action="mlogout.php" method="get"><button class="btn btn-primary" name="adminlogout">Logout</button></form>
+  </li>
+</ul>
+   </div>
+</nav>
+<hr class="featurette-divider">
+<div class="container">
+
+      <form action="mzipcode.php" onsubmit="return validate()" method="get" class="form-signin" role="form">
+        <h2 class="form-signin-heading">Insert Delivery Area</h2>
+        <label for="inputarea" class="sr-only">Area</label>
+        <input type="text" id="inputarea" name=""area class="form-control" placeholder="Area" required autofocus>
+        <label for="inputpincode" class="sr-only">Pincode</label>
+        <input type="number" id="inputpincode" name="pincode" class="form-control" placeholder="Pincode" required>
+      <hr class="featurette-divider">
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Insert</button>
+
+      </form>
+
+    </div> <!-- /container -->
+
+ <footer class="footer">
+      <p class="pull-right"><a href="#">Back to top</a></p> 
+      <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.php">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+<div align="right">
+<span class="text-muted">Developed by Najmuddin Kapadia.  All Right Reserved 2016.   </span>
+</div>
+        <!--<p class="text-muted">Developed by Najmuddin Kapadia. All Right Reserved 2016.</p>-->
+    </footer>
+    </body>
+    </html>

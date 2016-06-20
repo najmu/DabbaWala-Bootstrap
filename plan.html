@@ -1,0 +1,158 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DabbaWala</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/signin.css" rel="stylesheet" type="text/css">
+    <link href="css/sticky-footer.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body background-image:url("background1.jpg")>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" role="navigation">
+<a class="navbar-brand" href="#">
+        <img alt="Brand" src="dabbawala.png"></a>
+        </div>
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.php">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+   </div>
+</nav>
+
+<hr class="featurette-divider">
+<div class="container">
+<div class="table-responsive">
+<table class="table table-striped table-bordered table-hover">
+<tr class="success"> 
+      <form action="mpaymentdaily.php" method="get" class="form-signin" role="form">
+<th>Daily Dabba</th> 
+<td>
+1 Sabji<br> 
+3 Chapatis<br> 
+Salad<br> 
+Dal/Kadhi/Rajmah<br> 
+Rice <br>
+</td> 
+<td style="align:center;"> 70/-</td> 
+<td><input type="radio" name="daily" value="Rs 70/-"></input><br> 
+</td>
+<td> 
+<button class="btn btn-lg btn-primary btn-block" name="payment" type="submit">Payment</button> 
+</td>
+</form> 
+</tr>  
+<tr> 
+      <form action="mpaymentmini.php" method="get" class="form-signin" role="form">
+<th>Mini Dabba</th> 
+<td>
+1 Sabji<br> 
+2 Chapatis<br> 
+Salad<br> 
+Dal/Kadhi/Rajmah<br> 
+Rice/Pulav/Biryani <br> 
+</td> 
+<td style="align:center;"> 1 Month 1800/-<br><br>
+3 Month 5000/- <br><br>6 Month 7500/- </td> 
+<td>
+<input type="radio" name="mini" value="1 Month Rs 1800/-"></input><br><br>
+<input type="radio" name="mini" value="3 Month Rs 5000/-"></input><br><br> 
+  <input type="radio" name="mini" value="6 Month Rs 7500/-"></input> 
+</td>
+<td> 
+<button class="btn btn-lg btn-primary btn-block" name="payment" type="submit">Payment</button> 
+</td>
+</form> 
+</tr>  
+<tr class="success"> 
+      <form action="mpaymentregular.php" method="get" class="form-signin" role="form">
+<th>Regular Dabba</th> 
+<td>
+1 Sabji<br>
+2 Chapatis<br> 
+Salad/Papad<br> 
+Dal/Kadhi/Rajmah<br> 
+Rice/Pulav/Biryani <br> 
+</td> 
+<td style="align:center;"> 1 Month 2400/-<br><br> 3 Month 6000/-<br><br>6 Month 10000/-</td>
+<td>
+<input type="radio" name="regular" value="1 Month Rs 2400/-"></input><br><br> 
+<input type="radio" name="regular" value="3 Month Rs 6000/-"></input><br><br> 
+  <input type="radio" name="regular" value="6 Month Rs 10000/-"></input>
+</td>
+<td> 
+<button class="btn btn-lg btn-primary btn-block" name="payment" type="submit">Payment</button> 
+</td>
+</form> 
+</tr>  
+<tr> 
+      <form action="mpaymentmaharaja.php" method="get" class="form-signin" role="form">
+<th>Maharaja Dabba</th> 
+<td>
+1 Sabji<br> 
+3 Chapatis<br>
+Salad/Masala Papad<br> 
+Dal/Kadhi/Rajmah<br> 
+Rice/Pulav/Biryani <br> 
+</td> 
+<td style="align:center;"> 1 Month 3000/-<br><br> 3 Month 8000/-  <br><br>6 Month 15000/-</td>
+<td>
+<input type="radio" name="maharaja" value="1 Month Rs 3000/-"></input><br><br>
+<input type="radio" name="maharaja" value="3 Month Rs 8000/-"></input><br><br> 
+ <input type="radio" name="maharaja" value="6 Month Rs 15000/-"></input>
+</td>
+<td> 
+<button class="btn btn-lg btn-primary btn-block" name="payment" type="submit">Payment</button> 
+</td>
+</form> 
+</tr>  
+<tr class="success"> 
+      <form action="mpaymentnonveg.php" method="get" class="form-signin" role="form">
+<th>Non-Veg Dabba</th> 
+<td>
+Non Veg Gravy<br>
+3 Chapatis<br>
+Salad/Masala Papad<br> 
+Dal/Kadhi/Rajmah<br> 
+Rice/Pulav/Biryani <br>
+</td> 
+<td style="align:center;"> 1 Month 3500/-<br><br> 3 Month 9000/- <br><br>6 Month 16500/- </td> 
+<td><input type="radio" name="nonveg" value="1 Month Rs 3500/-"></input><br><br> 
+ <input type="radio" name="nonveg" value="3 Month Rs 9000/-"></input><br><br>
+ <input type="radio" name="nonveg" value="6 Month Rs 16500/-"></input> 
+</td>
+<td> 
+<button class="btn btn-lg btn-primary btn-block" name="payment" type="submit">Payment</button> 
+</td>
+</form> 
+</tr>  
+</table>
+</div>
+    </div> <!-- /container -->
+
+ <footer class="footer">
+      <p class="pull-right"><a href="#">Back to top</a></p> 
+      <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.php">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+<div align="right">
+<span class="text-muted">Developed by Najmuddin Kapadia.  All Right Reserved 2016.   </span>
+</div>
+        <!--<p class="text-muted">Developed by Najmuddin Kapadia. All Right Reserved 2016.</p>-->
+    </footer>
+    </body>
+    </html>

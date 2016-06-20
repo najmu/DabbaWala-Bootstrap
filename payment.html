@@ -1,0 +1,75 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DabbaWala</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/sticky-footer.css" rel="stylesheet" type="text/css">
+    <script type=\"text/javascript\"> 
+function payment() 
+{ 
+alert("Are you sure you want to Proceed for Payment");
+ document.payment1.submit.onsubmit(); 
+   }
+</script> 
+    </head>
+
+<body background-image:url("background1.jpg")>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" role="navigation">
+<a class="navbar-brand" href="#">
+        <img alt="Brand" src="dabbawala.png"></a>
+        </div>
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.php">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+   </div>
+</nav>
+<hr class="featurette-divider">
+<div class="container">
+<form name="payment1" onsubmit="payment()" action="mpayment.php" method="get">
+<table align="center">
+<td> 
+<ol class="list-group" type="1"> 
+<li style="align:cnter ;font-size:50px";>Credit Card  <input type="radio" name="pay" value="Credit Card"></input></li>
+<li style="align:cnter ;font-size:50px;">Debit Card  <input type="radio" name="pay" value="Debit Card"></input></li>
+<li style="align:cnter ;font-size:50px;">Netbanking  <input type="radio" name="pay" value="Net Banking"></input></li>
+<li style="align:cnter ;font-size:50px;">C.O.D      <input type="radio" name="pay" value="C.O.D"></input></li>
+<li style="align:cnter ;font-size:50px;">Online Wallet      <input type="radio" name="pay" value="Online Wallet"></input></li>
+</ol>
+</td>
+</table> 
+<br>
+<table align="center"> 
+<td><button class="btn btn-lg btn-primary btn-block" name="submit" type="submit">Make Payment</button></td> 
+</table>
+</form>
+</div>
+
+<footer class="footer">
+      <p class="pull-right"><a href="#">Back to top</a></p> 
+      <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.php">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+<div align="right">
+<span class="text-muted">Developed by Najmuddin Kapadia.  All Right Reserved 2016.   </span>
+</div>
+        <!--<p class="text-muted">Developed by Najmuddin Kapadia. All Right Reserved 2016.</p>-->
+    </footer>
+    </body>
+</html>

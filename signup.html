@@ -1,0 +1,166 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DabbaWala</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/signin.css" rel="stylesheet" type="text/css">
+    <link href="css/sticky-footer.css" rel="stylesheet" type="text/css">
+   
+<script type="text/javascript"> 
+function validate() 
+{ 
+ if( document.myForm.usernm.value == \ ) 
+   { 
+    alert( "Please provide your user Name!" ); 
+    document.myForm.usernm.focus(); 
+     return false; 
+ } 
+   if( document.myForm.password.value == \ ) 
+  { 
+    alert("Please provide your password!");
+     document.myForm.password.focus(); 
+    return false; 
+   }
+ if( document.myForm.nm.value == \ ) 
+   { 
+    alert("Please provide your name!" ); 
+    document.myForm.nm.focus(); 
+    return false; 
+  }
+  if( document.myForm.email.value == \ ) 
+   { 
+    alert( "Please provide your Email!" ); 
+   document.myForm.email.focus() ; 
+     return false; 
+  }
+  if( document.myForm.add1.value == \ ) 
+   {
+   alert( "Please provide your Address!" ); 
+   document.myForm.add1.focus();
+     return false; 
+   }
+    if( document.myForm.add2.value == \) 
+  {
+    alert("Please provide City!" ); 
+     document.myForm.add2.focus(); 
+     return false; 
+   }
+   if( document.myForm.add3.value == \) 
+  {
+    alert("Please provide State" ); 
+     document.myForm.add3.focus(); 
+     return false; 
+   }
+    if( document.myForm.pincode.value == \ || 
+          isNaN( document.myForm.pincode.value ) || 
+         document.myForm.pincode.value.length != 6 || document.myForm.pincode.value < 100000 ) 
+  { 
+     alert("Please provide 6 digit pincode." ); 
+     document.myForm.pincode.focus() ; 
+     return false; 
+   }
+    if( document.myForm.contact.value == \ || 
+           isNaN( document.myForm.contact.value ) ||
+           document.myForm.contact.value.length != 10 || document.myForm.contact.value < 1000000000 ) 
+   { 
+   alert( "Please provide 10 digit number." ); 
+    document.myForm.contact.focus(); 
+     return false; 
+  }
+     confirm("Are you sure you want to submit");
+    document.myForm.submit.onsubmit();
+    }
+    </script> 
+ 
+    </head>
+
+<body background-image:url("background1.jpg")>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" role="navigation">
+<a class="navbar-brand" href="#">
+        <img alt="Brand" src="dabbawala.png"></a>
+        </div>
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.php">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+   </div>
+</nav>
+
+<div class="jumbotron">
+ <div class="container">
+  <h1>User SignUp</h1>
+</div>
+</div>
+
+<div class="container">
+<form name="myForm" onsubmit="return validate()" action="msignup.php" method="get">
+ <div class="form-group">
+    <label for="name">Name</label>
+    <input type="text" class="form-control" name="nm" placeholder="Name">
+  </div>
+   <div class="form-group">
+    <label for="username">Username</label>
+    <input type="text" class="form-control" name="usernm" placeholder="username">
+  </div>
+   <div class="form-group">
+    <label for="email">Email address</label>
+    <input type="email" class="form-control" name="email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" name="password" placeholder="Password">
+  </div>
+  <div class="form-group">
+    <label for="contact">Contact</label>
+    <input type="number" class="form-control" name="contact" placeholder="contact">
+  </div>
+   <div class="form-group">
+    <label for="address">Address</label>
+    <input type="text" class="form-control" name="add1" placeholder="Address">
+  </div>
+   <div class="form-group">
+    <label for="city">City</label>
+    <input type="text" class="form-control" name="add2" placeholder="City">
+  </div>
+  <div class="form-group">
+    <label for="state">State</label>
+    <input type="text" class="form-control" name="add3" placeholder="State">
+  </div>
+   <div class="form-group">
+    <label for="pincode">Pincode</label>
+    <input type="number" class="form-control" name="pincode" placeholder="Pincode">
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" name="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>
+
+<footer class="footer">
+      <p class="pull-right"><a href="#">Back to top</a></p> 
+      <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.php">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+<div align="right">
+<span class="text-muted" >Developed by Najmuddin Kapadia.  All Right Reserved 2016.   </span>
+</div>
+</body>
+</html>

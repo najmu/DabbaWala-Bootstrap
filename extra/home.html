@@ -1,0 +1,99 @@
+<!DOCTYPE>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>DabbaWala</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/carousel.css" rel="stylesheet" type="text/css">
+    <link href="css/sticky-footer.css" rel="stylesheet" type="text/css">
+    </head>
+
+<body background-image:url("background1.jpg")>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header" role="navigation">
+<a class="navbar-brand" href="#">
+        <img alt="Brand" src="dabbawala.png"></a>
+        </div>
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.html">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+<ul class="nav nav-pills pull-right">
+  <li role="presentation">
+  <form action="mlogout.php" method="get"><button class="btn btn-primary" name="adminlogout">Logout</button></form>
+  </li>
+</ul>
+   </div>
+</nav>
+
+<hr class="featurette-divider">
+<div class="container">
+<form action="mavailable.php" method="get"> 
+<div class="col-lg-12">
+    <div class="input-group">
+    <input type="text" class="form-control" placeholder="Enter Pincode of your Area">
+      <span class="input-group-btn">
+        <button class="btn btn-primary" type="submit">CHECK AVAILABILITY</button>
+      </span>
+    </div><!-- /input-group -->
+  </div><!-- /.col-lg-12 -->
+</form>
+</div>
+<br class="featurette-divider">
+<div class="container">
+ <h1>User Panel</h1>
+ </div>
+<!--<div class="jumbotron">
+ <div class="container">
+  <h1>Admin Panel</h1>
+</div>
+</div>-->
+<br class="featurette-divider">
+<div class="container">
+<div class="row placeholders">
+<div class="col-md-3 col-sm-3 placeholder">
+              <a href="update.html"><img src="user.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
+              <h4>Update Personnel Info.</h4>
+              <form action="update.php" method="get"><button class="btn btn-primary" name="updateprofile">Update Personnel Info.</button></form>
+            </div>
+            <div class="col-md-3 col-sm-3 placeholder">
+              <a href="menu.html"><img src="user.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
+              <h4>Weekly Menu</h4>
+              <a href="menu.html"><button class="btn btn-primary" name="menu">Weekly Menu</button></a>
+            </div>
+            <div class="col-md-3 col-sm-3 placeholder">
+              <a href="plan.html"><img src="user.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
+              <h4>Meal Plans</h4>
+              <a href="plan.html"><button class="btn btn-primary" name="mealsplan">Meal Plans</button></a>
+            </div>
+            <div class="col-md-3 col-sm-3 placeholder">
+              <a href="feedback.html"><img src="user.jpg" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail"></a>
+              <h4>Feedback</h4>
+              <a href="feedback.html"><button class="btn btn-primary" name="feedback">Feedback</button></a>
+            </div>
+          </div>
+          </div>
+
+<footer class="footer">
+      <p class="pull-right"><a href="#">Back to top</a></p> 
+      <ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="indexnew.html">Home</a></li>
+  <li role="presentation"><a href="about.html">About Us</a></li>
+  <li role="presentation"><a href="menu.html">Menu</a></li>
+ <li role="presentation"><a href="plan.html">Plan</a></li>
+ <li role="presentation"><a href="mdisp.html">Feedback</a></li>
+ <li role="presentation"><a href="contact.html">Contact Us</a></li>
+</ul>
+<div align="right">
+<span class="text-muted" >Developed by Najmuddin Kapadia.  All Right Reserved 2016.   </span>
+</div>
+          </body>
+          </html>
